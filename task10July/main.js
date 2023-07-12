@@ -2,27 +2,27 @@
  * display the larger.Go to the editor */
 /******* Start Your Code *********/
 
-// let number1 = 5;
-// let number2 = 7;
-// if (number1 > number2){
-//     console.log(`the larger number is ${number1}`);
-// }else if (number1 < number2){
-//     console.log(`the larger number is ${number1}`);
-// }else{
-//     console.log(`the numbers is equals`);
-// }
+let number1 = 5;
+let number2 = 7;
+if (number1 > number2){
+    console.log(`the larger number is ${number1}`);
+}else if (number1 < number2){
+    console.log(`the larger number is ${number1}`);
+}else{
+    console.log(`the numbers is equals`);
+}
 
 
  /******* End Your Code ********* */
 
 /* 2. Write a JavaScript conditional statement to find the sign
- of product of three numbers. Display an alert box with the 
- specified sign. Go to the editor 
+of product of three numbers. Display an alert box with the 
+specified sign. Go to the editor 
 Sample numbers : 3, -7, 2 
 Output : The sign is - */
 /******* Start Your Code *********/
 
-// let x = 3,y=-7,z=2;
+// let x = 3, y = -7 , z = 2;
 
 // let r = x*y*z;
 // if(r<0){
@@ -93,9 +93,9 @@ Output : 0 */
 
  /******* End Your Code ********* */
 
- /* 5.Write the if statement to display "Hello World" if x is greater than y, otherwise alert "Goodbye".*/
+/* 5.Write the if statement to display "Hello World" if x is greater than y, otherwise alert "Goodbye".*/
 /******* Start Your Code *********/
-  
+
 // let x =1, y= 2;
 // if(x>y){
 //     console.log("Hello World");
@@ -112,7 +112,7 @@ equal or between 60 and 69 ===> D
 equal or between 70 and 79 ===> C
 equal or between 80 and 89 ===> B
 */
- 
+
 // let avg = 55;
 
 // if (avg < 50){
@@ -141,18 +141,18 @@ equal or between 80 and 89 ===> B
 //    }
 
 /*2. Write a JS code to print Even numbers in arr :
-   var arr = [13,23,12,45,22,48,66,100]
+    var arr = [13,23,12,45,22,48,66,100]
 */
 
 
-let arr = [13,23,12,45,22,48,66,100];
-let evenarr = [];
-for(let i = 0; i < arr.length; i++) {
-        if (arr[i] % 2 == 0)
-        evenarr.push(arr[i]);
-}
+// let arr = [13,23,12,45,22,48,66,100];
+// let evenarr = [];
+// for(let i = 0; i < arr.length; i++) {
+//         if (arr[i] % 2 == 0)
+//         evenarr.push(arr[i]);
+// }
 
-console.log(`Even numbers in an array are: ${evenarr}`);
+// console.log(`Even numbers in an array are: ${evenarr}`);
 
 
 /* 
@@ -183,7 +183,7 @@ console.log(`Even numbers in an array are: ${evenarr}`);
 
 
  /* 
- Check if a string contains the letter “y”. Print “yes” if it does and “no” if it does not.
+Check if a string contains the letter “y”. Print “yes” if it does and “no” if it does not.
 let x = "don’t know why"
 
 */
