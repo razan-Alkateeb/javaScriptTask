@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button {
+            background-color: rgb(100, 32, 32);
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        table {
+            margin-top: 40px;
+            width: 90%;
+            background-color: rgb(100, 32, 32);
+            border: 1px solid black;
+            border-radius: 10px;
+            color: white;
+            font-size: large;
+            
+        }
+       
+
+        table thead th {
+            padding: 20px;
+            
+        }
+
+        table td {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button>Load Data</button>
+
+    <table>
+        <thead>
+            <th>Actor</th>
+            <th>Gender</th>
+            <th>eyeColour</th>
+            <th>Name</th>
+            <th>Image</th>
+        </thead>
+    </table>
+
+
+
+
+
+
+
+    <script>
+
+        let table = document.querySelector("table");
+        let load = document.querySelector("button");
+
+        load.addEventListener("click", () => {
+            let names = new XMLHttpRequest();
+            names.open("GET", "https://hp-api.onrender.com/api/characters");
+
+
+            names.onload = () => {
+                let json = JSON.parse(names.responseText);
+
+                for (let i = 0; i < 5; i++) {
+                    let row = document.createElement("tr");
+                    table.appendChild(row);
+
+                    for (const key in json[i]) {
+                        let sell = document.createElement("td");
+
+                         if(key === "actor"){
+                            sell.innerHTML = json[i].actor;
+                            row.appendChild(sell);
+                        }else if(key === "eyeColour"){
+                            sell.innerHTML = json[i].eyeColour
+;
+                            row.appendChild(sell);
+                        }else if(key === "name"){
+                            sell.innerHTML = json[i].name
+;
+                            row.appendChild(sell);
+                        }else if(key === "gender"){
+                            sell.innerHTML = json[i].gender
+;
+                            row.appendChild(sell);
+                        }else if (key === "image") {
+                            sell.innerHTML = `<img src="${json[i].image}"/>`;
+                            row.appendChild(sell);
+                        } 
+
+                    }
+                }
+            };
+            names.send();
+        });
+
+
+    </script>
+</body>
+
+</html>
+
+
+

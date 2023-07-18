@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    //
+    <link rel="stylesheet" href="./index.json">
+</head>
+
+<body>
+
+    <script >
+        
+        const jsonObj = `{
+            "name": "Razan",
+            "age": 24,
+            "pass": true,
+            "skills": ["html", "css", "js"],
+            "contactInfo": {
+                "email": "razan@gmail.com",
+                "phone": "0123456789"
+            }
+        }`
+
+
+        console.log(typeof jsonObj)
+        console.log(jsonObj)
+
+
+        let jsObj = JSON.parse(jsonObj);
+
+        console.log(typeof jsObj);
+        console.log(jsObj);
+
+        console.log(jsObj["name"])
+        console.log(jsObj["age"])
+        console.log(jsObj["pass"])
+        console.log(jsObj["skills"])
+        console.log(jsObj["contactInfo"]["email"])
+
+
+        jsObj["name"]="sam"
+        console.log(jsObj["name"])
+
+
+         let data = "";
+
+        for (const i in jsObj) {
+            data += jsObj[i] + ", ";
+        }
+
+
+        
+        // jsObj["skills"].forEach(function (ele) {
+        //     data += ele + ", ";
+
+        // });
+
+
+        // for (let i = 0; i < jsObj.skills.length; i++) {
+        //     data += jsObj.skills[i] +"/";
+        // }
+
+        console.log(data)
+
+
+
+
+        const editjson = JSON.stringify(jsObj)
+
+        console.log(typeof editjson)
+
+
+
+
+    </script>
+</body>
+
+</html>

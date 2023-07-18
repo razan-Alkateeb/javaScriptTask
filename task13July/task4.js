@@ -32,7 +32,7 @@ let active = document.querySelectorAll("input");
 
 for(let i = 0; i < active.length; i++) {
 
-    active[i].addEventListener('change', function() {
+    active[i].addEventListener("change", function() {
 
         if(active[i].checked) {
 

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button {
+            background-color: bisque;
+            padding: 10px;
+            color: black;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        table {
+            margin-top: 40px;
+            width: 90%;
+            background-color: bisque;
+            border: 1px solid black;
+            border-radius: 10px;
+            
+        }
+
+        table thead th {
+            padding: 20px;
+        }
+
+        table td {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        img {
+            width: 150px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button>Load Data</button>
+
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Major</th>
+            <th>University</th>
+            <th>Image</th>
+        </thead>
+    </table>
+
+
+
+
+
+
+
+    <script>
+
+        let table = document.querySelector("table");
+        let load = document.querySelector("button");
+
+        load.addEventListener("click", () => {
+            let names = new XMLHttpRequest();
+            names.open("GET", "index.JSON");
+
+
+            names.onload = () => {
+                let json = JSON.parse(names.responseText);
+
+                for (let i = 0; i < json.length; i++) {
+                    let row = document.createElement("tr");
+                    table.appendChild(row);
+
+                    for (const key in json[i]) {
+                        let sell = document.createElement("td");
+
+                        if (key === "image") {
+                            sell.innerHTML = `<img src="${json[i][`${key}`]}"/>`;
+                            row.appendChild(sell);
+                        } else {
+                            sell.innerHTML = json[i][`${key}`];
+                            row.appendChild(sell);
+                        }
+                    }
+                }
+            };
+            names.send();
+        });
+
+
+    </script>
+</body>
+
+</html>

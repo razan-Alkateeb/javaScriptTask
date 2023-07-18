@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <input type="color" id="inputColor">
+
+    <script>
+        let inputColor = document.getElementById("inputColor")
+
+        inputColor.onchange = function () {
+            let color = inputColor.value;
+
+            document.body.style.backgroundColor = color
+            sessionStorage.setItem("themeColor", color);
+        };
+        
+        let  x= sessionStorage.getItem('themeColor');
+        if(x){
+            document.body.style.backgroundColor = x;    
+                }
+        
+    </script>
+</body>
+
+</html>
