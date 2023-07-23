@@ -1,34 +1,69 @@
-[
+{
+  "title": [
     {
-            "name":"Razan",
-            "age":"24",
-            "major":"Computer Science",
-            "university":"yarmouk",
-            "image":"./download.jpg"
-        },
-
-{
-    "name":"Razan",
-    "age":"24",
-    "major":"Computer Science",
-    "university":"yarmouk",
-    "image":"./download.jpg"
+      "name": "Razan",
+      "age": "24",
+      "major": "Computer Science",
+      "university": "yarmouk",
+      "image": "./download.jpg"
     },
 
-{
-        "name":"Razan",
-        "age":"24",
-        "major":"Computer Science",
-        "university":"yarmouk",
-        "image":"./download.jpg"
+    {
+      "name": "Razan",
+      "age": "24",
+      "major": "Computer Science",
+      "university": "yarmouk",
+      "image": "./download.jpg"
     },
 
-{
-        "name":"Razan",
-        "age":"24",
-        "major":"Computer Science",
-        "university":"yarmouk",
-        "image":"./download.jpg"
+    {
+      "name": "Razan",
+      "age": "24",
+      "major": "Computer Science",
+      "university": "yarmouk",
+      "image": "./download.jpg"
+    },
+
+    {
+      "name": "Razan",
+      "age": "24",
+      "major": "Computer Science",
+      "university": "yarmouk",
+      "image": "./download.jpg"
     }
+  ],
 
-]
+  "title2": [
+    {
+      "name": "Razan",
+      "age": "24",
+      "major": "Computer Science",
+      "university": "yarmouk",
+      "image": "./download.jpg"
+    },
+
+    {
+      "name": "Razan",
+      "age": "24",
+      "major": "Computer Science",
+      "university": "yarmouk",
+      "image": "./download.jpg"
+    },
+
+    {
+      "name": "Razan",
+      "age": "24",
+      "major": "Computer Science",
+      "university": "yarmouk",
+      "image": "./download.jpg"
+    },
+
+    {
+      "name": "Razan",
+      "age": "24",
+      "major": "Computer Science",
+      "university": "yarmouk",
+      "image": "./download.jpg"
+    }
+  ]
+}
