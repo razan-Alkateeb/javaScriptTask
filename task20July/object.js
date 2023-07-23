@@ -11,8 +11,14 @@ let myObject = {
   lname: "alkateeb",
   age: 24,
   dob: "27-08-1998",
-  favFood: ["food1", "food2", "food3"],
-  favMovie: ["movie1", "movie2", "movie3", "movie4", "movie5"],
+  favFood: ["Pizza", "Sushi", "Chocolate"],
+  favMovie: [
+    "The Shawshank Redemption",
+    "Inception",
+    "The Lord of the Rings Trilogy",
+    "Interstellar",
+    "The Matrix"
+  ],
 };
 
 var persons = [
